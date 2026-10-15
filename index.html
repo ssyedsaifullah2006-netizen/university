@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Learning Management Portal</title>
+    <style>
+        :root { --primary: #003366; --secondary: #f4f4f9; --accent: #d4af37; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: var(--secondary); color: var(--text); }
+        header { background: var(--primary); color: white; padding: 1.5rem; text-align: center; border-bottom: 4px solid var(--accent); }
+        nav { display: flex; justify-content: center; background: #002244; padding: 0.5rem; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid var(--primary); }
+        .card h2 { color: var(--primary); margin-top: 0; }
+        ul { padding-left: 1.2rem; }
+        li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 1.5rem; background: var(--primary); color: white; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EduPortal: University Learning Management System</h1>
+        <p>System Status: Functional | Version 1.0.0 (Stable)</p>
+    </header>
+    <nav>
+        <a href="#courses">Courses</a> <a href="#faculty">Faculty</a> <a href="#resources">Resources</a> <a href="#exams">Exams</a>
+    </nav>
+    <div class="container">
+        <div class="card" id="courses">
+            <h2>Course Information</h2>
+            <ul>
+                <li><strong>CS-101:</strong> Introduction to Computer Science</li>
+                <li><strong>CS-302:</strong> Distributed Systems & Cloud Infrastructure</li>
+            </ul>
+        </div>
+        <div class="card" id="faculty">
+            <h2>🎓 Faculty Profiles</h2>
+            <ul>
+                <li><strong>Dr. Alan Turing:</strong> Department of Artificial Intelligence</li>
+                <li><strong>Prof. Grace Hopper:</strong> Department of Software Engineering</li>
+            </ul>
+        </div>
+        <div class="card" id="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li>Lecture Notes: Lecture_Week5_K8s.pdf</li>
+                <li>Lab Guide: Lab_CI_CD_Jenkins.md</li>
+            </ul>
+        </div>
+        <div class="card" id="exams">
+            <h2>Examination Schedules</h2>
+            <p><strong>Mid-Term Assessment:</strong> Oct 24, 2026 - 09:00 AM</p>
+            <p><strong>Final Practical Viva:</strong> Nov 18, 2026 - 02:00 PM</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 EduPortal University System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
